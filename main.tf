@@ -1,16 +1,4 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source = "hashicorp/azurerm"
-      version = "2.39.0"
-    }
-  }
+provider "azurerm" {
+  features {}
+  use_oidc = true
 }
-
-backend "azurerm" {
-    key              = "terraform.tfstate"
-    use_oidc         = true
-    use_azuread_auth = true
-  }
-
-
