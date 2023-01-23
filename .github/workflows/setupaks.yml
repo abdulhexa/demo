@@ -1,4 +1,4 @@
-name: 'iacsetup'
+name: 'Terraform'
 
 on:
   push:
