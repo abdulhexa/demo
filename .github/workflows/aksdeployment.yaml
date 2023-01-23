@@ -49,6 +49,8 @@ jobs:
               with:
                 cluster-name: ${{ env.CLUSTER_NAME }}
                 resource-group: ${{ env.CLUSTER_RESOURCE_GROUP }}
+            - name: create namespace
+              run: kubectl create namespace namespace-workflow-1674449177361
             - uses: Azure/k8s-deploy@v4
               name: Deploys application
               with:
