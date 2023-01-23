@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "aks-resource" {
-    name = "kubernetes-resource-group"
+    name = "kubernetes-resource-group-automation"
     location = var.location  
 }
 
