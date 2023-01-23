@@ -2,7 +2,7 @@ name: aksdeployment
 "on":
     push:
         branches:
-            - application
+            - main
     workflow_dispatch: {}
 env:
     ACR_RESOURCE_GROUP: kubernetes-resource-group
