@@ -55,8 +55,7 @@ jobs:
       with:
         namespace: clusternamespace
         manifests: |
-          manifests/deployment.yml
-          manifests/service.yml
+          manifests/azure-vote-all-in-one-redis.yaml
         images: |
           containerregistry43545.azurecr.io/terraformcluster:${{ github.sha }}
         imagepullsecrets: |
