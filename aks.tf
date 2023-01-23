@@ -27,8 +27,3 @@ resource "azurerm_kubernetes_cluster" "aks-cluster" {
 
 }
 
-resource "kubernetes_namespace" "aks-namespace" {
-  metadata {
-    name = "terraform-example-namespace"
-  }
-}
