@@ -5,10 +5,10 @@ name: aksdeployment
             - main
     workflow_dispatch: {}
 env:
-    ACR_RESOURCE_GROUP: kubernetes-resource-group
+    ACR_RESOURCE_GROUP: kubernetes-resource-group-automation
     AZURE_CONTAINER_REGISTRY: acrworkflow1674449177361
     CLUSTER_NAME: terraform-cluster
-    CLUSTER_RESOURCE_GROUP: kubernetes-resource-group
+    CLUSTER_RESOURCE_GROUP: kubernetes-resource-group-automation
     CONTAINER_NAME: image-workflow-1674449177361
     DEPLOYMENT_MANIFEST_PATH: |
         ./manifests/azure-vote-all-in-one-redis.yaml
