@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "terraformcluster-0db4"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "terraformcluster-0db4"
+  template:
+    metadata:
+      labels:
+        app: "terraformcluster-0db4"
+    spec:
+      containers:
+        - name: "terraformcluster-0db4"
+          image: "containerregistry43545.azurecr.io/terraformcluster"
+          ports:
+          - containerPort: 80
