@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_CONTAINER_REGISTRY: "your-azure-container-registry"
+  AZURE_CONTAINER_REGISTRY: "azureregistry564654665"
   CONTAINER_NAME: "your-container-name"
   RESOURCE_GROUP: "your-resource-group"
   RESOURCE_GROUP_RG: "your-resource-group"
