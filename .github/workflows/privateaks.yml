@@ -1,10 +1,9 @@
 name: privateaks
-
-on:
-  push:
-    branches:
-      - privateaks
-
+"on":
+    push:
+        branches:
+            - privateaks
+    workflow_dispatch: {}
 env:
   TF_LOG: INFO
 
