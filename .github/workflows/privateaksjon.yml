@@ -3,7 +3,7 @@ name: privateaksjson
 on:
   push:
     branches:
-      - main
+      - privateaksjson
 
 env:
   TF_LOG: INFO
